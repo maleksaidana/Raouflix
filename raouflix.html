@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Raouflix</title>
+    <link rel="icon" href="images/logo.png">
+    <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="stylesheet2.css">
+  </head>
+  <body onload="startTime()">
+    <div class="header">
+<div>
+  <h1 id="titre">Raouflix</h1>
+      <img src="images/logo.png" alt="Logo">
+
+</div>
+      <h1 class="welcome">Bienvenue :D</h1>
+      <h2 id="txt">Time</h2>
+
+    </div>
+    <div class="casegauche">
+      <h3>Categories</h3>
+      <hr>
+      <div class="categ">
+        <div class="shape" onclick="BoutonDrame()">
+          <h4>Drame</h4>
+        </div>
+        <div class="shape" onclick="BoutonComedie()">
+          <h4>Comedie</h4>
+        </div>
+        <div class="shape" onclick="BoutonAction()">
+          <h4>Action</h4>
+        </div>
+        <div class="shape" onclick="BoutonAventure()">
+          <h4>Aventure</h4>
+        </div>
+        <div class="shape" onclick="BoutonPopulaire()">
+          <h4>Populaire</h4>
+        </div>
+      </div>
+
+      <button onclick="location.reload();location.href='indexFR.html'" class="logout" type="submit">Se Deconnecter</button>
+    </div>
+    <div class="casemilieu">
+
+      <!-- page accueil -->
+      <div class="content" id="contenu0">
+
+
+      <h2>Recommended</h2>
+
+
+
+
+
+          <div id="premiere" >
+          <img  onclick="AfficherBreakingbad()" src="images/breakingbad.jpg" alt="vikings" width="700" height="200">
+
+</div>
+
+
+      <h2 id="nouveaute">Nouveaute</h2>
+
+      <div id="deuxieme"class="gallery1">
+          <img  onclick="AfficherGot()"src="images/got.jpg" alt="vikings" width="700" height="200">
+      </div>
+      </div>
+
+      <!--page drame  -->
+      <div class="content" id="contenu1">
+
+      <div  class="gallery">
+        <img onclick="AfficherHimym()" src="images/himym.jpg" alt="vikings" width="600" height="400">
+      </div>
+      <div class="gallery">
+          <img  onclick="AfficherMyhero()"src="images/myhero.jpg" alt="vikings" width="600" height="400">
+      </div>
+      <div class="gallery">
+          <img onclick="AfficherEndofworld()"src="images/endofworld.png" alt="vikings" width="600" height="400">
+      </div>
+      <div  class="gallery">
+          <img onclick="AfficherBrooklyn99()" src="images/brooklyn99.jpg" alt="vikings" width="600" height="400">
+      </div>
+      <div  class="gallery">
+          <img onclick="AfficherOnepiece()" src="images/onepiece.jpg" alt="vikings" width="600" height="400">
+      </div>
+      <div  class="gallery">
+          <img onclick="AfficherAttackontitan()" src="images/attackontitan.jpg" alt="vikings" width="600" height="400">
+      </div>
+      </div>
+      <!--page comedie  -->
+      <div class="content" id="contenu2">
+        <div class="gallery">
+            <img  onclick="AfficherEndofworld()"src="images/endofworld.png" alt="vikings" width="600" height="400">
+        </div>
+        <div class="gallery">
+            <img onclick="AfficherHimym()" src="images/himym.jpg" alt="vikings" width="600" height="400">
+        </div>
+        <div class="gallery">
+            <img onclick="AfficheVikings()" src="images/vikings.jpg" alt="vikings" width="600" height="400">
+        </div>
+        <div class="gallery">
+            <img onclick="AfficherTheoffice()" src="images/theoffice.jpg" alt="vikings" width="600" height="400">
+        </div>
+        <div class="gallery">
+            <img  onclick="AfficherAttackontitan()"src="images/attackontitan.jpg" alt="vikings" width="600" height="400">
+        </div>
+        <div class="gallery">
+            <img  onclick="AfficherBreakingbad()"src="images/breakingbad2.jpg" alt="vikings" width="600" height="400">
+        </div>
+      </div>
+      <!--page action  -->
+      <div class="content" id="contenu3">
+        <div class="gallery">
+            <img onclick="AfficherBreakingbad()" src="images/breakingbad2.jpg" alt="vikings" width="600" height="400">
+        </div>
+        <div class="gallery">
+            <img onclick="AfficherMyhero()"src="images/myhero.jpg" alt="vikings" width="600" height="400">
+        </div>
+        <div class="gallery">
+            <img  onclick="AfficherOnepiece()"src="images/onepiece.jpg" alt="vikings" width="600" height="400">
+        </div>
+        <div class="gallery">
+            <img onclick="AfficherTheoffice()" src="images/theoffice.jpg" alt="vikings" width="600" height="400">
+        </div>
+        <div class="gallery">
+            <img onclick="AfficherNaruto()"src="images/naruto.jpg" alt="vikings" width="600" height="400">
+        </div>
+        <div class="gallery">
+            <img onclick="AfficherBrooklyn99()" src="images/brooklyn99.jpg" alt="vikings" width="600" height="400">
+        </div>
+      </div>
+      <!--page aventure -->
+      <div class="content" id="contenu4">
+        <div class="gallery">
+            <img onclick="AfficherBrooklyn99()" src="images/brooklyn99.jpg" alt="vikings" width="600" height="400">
+        </div>
+        <div class="gallery">
+            <img onclick="AfficherEndofworld()" src="images/endofworld.png" alt="vikings" width="600" height="400">
+        </div>
+        <div class="gallery">
+            <img onclick="AfficheVikings()" src="images/vikings.jpg" alt="vikings" width="600" height="400">
+        </div>
+        <div class="gallery">
+            <img onclick="AfficherHimym()" src="images/himym.jpg" alt="vikings" width="600" height="400">
+        </div>
+        <div class="gallery">
+            <img onclick="AfficherTokyoghoul()" src="images/tokyoghoul.jpg" alt="vikings" width="600" height="400">
+        </div>
+        <div class="gallery">
+            <img onclick="AfficherAssassination()" src="images/assassination.jpg" alt="vikings" width="600" height="400">
+        </div>
+      </div>
+      <!--page populaire  -->
+      <div class="content" id="contenu5">
+
+      <div class="gallery">
+          <img onclick="AfficherTheoffice()"src="images/theoffice.jpg" alt="vikings" width="600" height="400">
+      </div>
+      <div class="gallery">
+          <img onclick="AfficherNaruto()"src="images/naruto.jpg" alt="vikings" width="600" height="400">
+      </div>
+      <div class="gallery">
+          <img onclick="AfficherBrooklyn99()" src="images/brooklyn99.jpg" alt="vikings" width="600" height="400">
+      </div>
+      <div class="gallery">
+          <img onclick="AfficherHimym()" src="images/himym.jpg" alt="vikings" width="600" height="400">
+      </div>
+      <div class="gallery">
+          <img onclick="AfficherMyhero()" src="images/myhero.jpg" alt="vikings" width="600" height="400">
+      </div>
+      <div class="gallery">
+          <img onclick="AfficherTokyoghoul()" src="images/tokyoghoul.jpg" alt="vikings" width="600" height="400">
+      </div>
+      </div>
+
+    </div>
+
+<!-- droite default -->
+    <div id="droitedefault" class="casedroite">
+
+      <div class="trailer">
+
+        <div class="shape1">
+          <img  src="images/welcome.gif" class="gif" alt="gif">
+
+
+
+
+
+        </div>
+      </div>
+
+      <div class="description">
+        <div class="shape2">
+          <h3>Description</h3>
+          <p>cliquez sur un film pour afficher sa description</p>
+        </div>
+      </div>
+    </div>
+    <!-- droitevikings -->
+    <div id="droitevikings" class="casedroite">
+
+      <div class="trailer">
+
+        <div class="shape1">
+          <iframe src="https://www.youtube.com/embed/8dGCvJkzQSE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+
+
+            <button id="boutonwatch" onclick="window.open('https://www.youtube.com/embed/8dGCvJkzQSE')" class="watch" type="submit">Watch</button>
+
+        </div>
+      </div>
+
+      <div class="description">
+        <div class="shape2">
+          <h3>Description</h3>
+          <p>Scandinavie, à la fin du 8ème siècle. Ragnar Lodbrok, un jeune guerrier viking, est avide d'aventures et de nouvelles conquêtes. Lassé des pillages sur les terres de l'Est, il se met en tête d'explorer l'Ouest par la mer.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- droitemyhero -->
+    <div id="droitemyhero" class="casedroite">
+
+      <div class="trailer">
+
+        <div class="shape1">
+          <iframe  src="https://www.youtube.com/embed/broyogKLs2Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+
+
+            <button id="boutonwatch" onclick="window.open('https://www.youtube.com/embed/broyogKLs2Y')" class="watch" type="submit">Watch</button>
+
+        </div>
+      </div>
+
+      <div class="description">
+        <div class="shape2">
+          <h3>Description</h3>
+          <p>Dans un monde où 80 % de la population mondiale possède des super-pouvoirs, ici nommés "Alters" (個性, Kosei?), n'importe qui peut devenir un héros ou, s'il le souhaite, un criminel.</p>
+        </div>
+      </div>
+    </div>
+    <!-- droiteattackontitan -->
+    <div id="droiteattackontitan" class="casedroite">
+
+      <div class="trailer">
+
+        <div class="shape1">
+          <iframe  src="https://www.youtube.com/embed/MGRm4IzK1SQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+            <button id="boutonwatch" onclick="window.open('https://www.youtube.com/embed/MGRm4IzK1SQ')" class="watch" type="submit">Watch</button>
+
+        </div>
+      </div>
+
+      <div class="description">
+        <div class="shape2">
+          <h3>Description</h3>
+          <p>L’histoire tourne autour du personnage d’Eren Jäger dans un monde où l’humanité vit entourée d’immenses murs pour se protéger de créatures gigantesques, les Titans. en éclaircissant les mystères liés à l’apparition des Titans.</p>
+        </div>
+      </div>
+    </div>
+    <!-- droitebreakingbad -->
+    <div id="droitebreakingbad" class="casedroite">
+
+      <div class="trailer">
+
+        <div class="shape1">
+          <iframe src="https://www.youtube.com/embed/ceqOTZnhgY8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+
+
+            <button id="boutonwatch" onclick="window.open('https://www.youtube.com/embed/ceqOTZnhgY8')" class="watch" type="submit">Watch</button>
+
+        </div>
+      </div>
+
+      <div class="description">
+        <div class="shape2">
+          <h3>Description</h3>
+          <p>Walter White, 50 ans, est professeur de chimie dans un lycée du Nouveau-Mexique. Pour réunir de l'argent afin de subvenir aux besoins de sa famille, Walter met ses connaissances en chimie à profit pour fabriquer et vendre du crystal meth.</p>
+        </div>
+      </div>
+    </div>
+    <!-- droitbrooklyn99 -->
+    <div id="droitebrooklyn99" class="casedroite">
+
+      <div class="trailer">
+
+        <div class="shape1">
+          <iframe src="https://www.youtube.com/embed/QD3NkwKjHkk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+
+
+            <button id="boutonwatch" onclick="window.open('https://www.youtube.com/embed/QD3NkwKjHkk')" class="watch" type="submit">Watch</button>
+
+        </div>
+      </div>
+
+      <div class="description">
+        <div class="shape2">
+          <h3>Description</h3>
+          <p>Cette comédie chorale suit les personnages et les affaires d'un commissariat de Brooklyn, loin des dangers et des affaires plus spectaculaires du très chic Manhattan.</p>
+        </div>
+      </div>
+    </div>
+    <!-- droitendofworld -->
+    <div id="droiteendofworld" class="casedroite">
+
+      <div class="trailer">
+
+        <div class="shape1">
+          <iframe  src="https://www.youtube.com/embed/vbiiik_T3Bo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+
+
+            <button id="boutonwatch" onclick="window.open('https://www.youtube.com/embed/vbiiik_T3Bo')" class="watch" type="submit">Watch</button>
+
+        </div>
+      </div>
+
+      <div class="description">
+        <div class="shape2">
+          <h3>Description</h3>
+          <p>ames, âgé de dix-sept ans et qui vit seul avec son père veuf, se présente comme un psychopathe et tue régulièrement des animaux comme passe-temps. Il se lie avec Alyssa, une camarade de lycée aussi rêveuse que rebelle qui vit avec sa mère et son beau-père.</p>
+        </div>
+      </div>
+    </div>
+    <!-- droitehimym -->
+    <div id="droitehimym" class="casedroite">
+
+      <div class="trailer">
+
+        <div class="shape1">
+          <iframe  src="https://www.youtube.com/embed/aJtVL2_fA5w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+
+
+            <button id="boutonwatch"  onclick="window.open('https://www.youtube.com/embed/aJtVL2_fA5w')" class="watch" type="submit">Watch</button>
+
+        </div>
+      </div>
+
+      <div class="description">
+        <div class="shape2">
+          <h3>Description</h3>
+          <p>La série débute en 2030, lorsque Ted Mosby raconte à ses deux enfants comment il a rencontré leur mère. Il se remémore ses jeunes années, et le pilote fait place aux souvenirs de Ted en 2005.</p>
+        </div>
+      </div>
+    </div>
+    <!-- droitenaruto -->
+    <div id="droitenaruto" class="casedroite">
+
+      <div class="trailer">
+
+        <div class="shape1">
+          <iframe  src="https://www.youtube.com/embed/kJCMQXNvADk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+
+
+            <button id="boutonwatch" onclick="window.open('https://www.youtube.com/embed/kJCMQXNvADk')" class="watch" type="submit">Watch</button>
+
+        </div>
+      </div>
+
+      <div class="description">
+        <div class="shape2">
+          <h3>Description</h3>
+          <p> Naruto est un jeune ninja du village de Konoha. Hôte du démon renard à neuf queues, une créature qui a attaqué le village par le passé, il est rejeté par les autres villageois. Son ambition est de devenir Hokage, le chef du village, afin de gagner le respect des habitants.</p>
+        </div>
+      </div>
+    </div>
+    <!-- droitetheoffice -->
+    <div id="droitetheoffice" class="casedroite">
+
+      <div class="trailer">
+
+        <div class="shape1">
+          <iframe  src="https://www.youtube.com/embed/jz1omRneAGg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></body>
+
+
+
+
+            <button id="boutonwatch" onclick="window.open('https://www.youtube.com/embed/jz1omRneAGg')" class="watch" type="submit">Watch</button>
+
+        </div>
+      </div>
+
+      <div class="description">
+        <div class="shape2">
+          <h3>Description</h3>
+          <p>The Office est une adaptation américaine de la série télévisée britannique du même nom mettant en scène, sous forme de documenteur, le quotidien d'employés de bureau de l'entreprise de papier fictive Dunder Mifflin à Scranton en Pennsylvanie.</p>
+        </div>
+      </div>
+    </div>
+    <!-- droiteonepiece -->
+    <div id="droiteonepiece" class="casedroite">
+
+      <div class="trailer">
+
+        <div class="shape1">
+          <iframe  src="https://www.youtube.com/embed/Jvkq7akLDiA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+
+
+            <button id="boutonwatch" onclick="window.open('https://www.youtube.com/embed/Jvkq7akLDiA')" class="watch" type="submit">Watch</button>
+
+        </div>
+      </div>
+
+      <div class="description">
+        <div class="shape2">
+          <h3>Description</h3>
+          <p>One Piece est une série de mangas shōnen créée par Eiichirō Oda. Elle est prépubliée depuis le 22 juillet 1997 dans le magazine hebdomadaire Weekly Shōnen Jump, puis regroupée en volumes reliés aux éditions Shūeisha.</p>
+        </div>
+      </div>
+    </div>
+    <!-- droitetokyoghoul -->
+    <div id="droitetokyoghoul" class="casedroite">
+
+      <div class="trailer">
+
+        <div class="shape1">
+          <iframe  src="https://www.youtube.com/embed/ETHpMMV8rJU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+
+
+            <button id="boutonwatch" onclick="window.open('https://www.youtube.com/embed/ETHpMMV8rJU')" class="watch" type="submit">Watch</button>
+
+        </div>
+      </div>
+
+      <div class="description">
+        <div class="shape2">
+          <h3>Description</h3>
+          <p>Dans la ville de Tokyo, des créatures nommées goules sont apparues et se nourrissent de chair humaine pour survivre. Un jour, Ken Kaneki, jeune étudiant, se fait attaquer par l'une d'entre elles et subit une grave blessure. Pour rester en vie, il reçoit une greffe de la goule qui l'a attaqué et devient un hybride, mi-humain mi-goule (borgne artificielle).</p>
+        </div>
+      </div>
+    </div>
+    <!-- droiteassassination -->
+    <div id="droiteassassination" class="casedroite">
+
+      <div class="trailer">
+
+        <div class="shape1">
+          <iframe  src="https://www.youtube.com/embed/kgNkGohA20k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+
+
+            <button id="boutonwatch" onclick="window.open('https://www.youtube.com/embed/kgNkGohA20k')" class="watch" type="submit">Watch</button>
+
+        </div>
+      </div>
+
+      <div class="description">
+        <div class="shape2">
+          <h3>Description</h3>
+          <p>L'histoire se déroule au prestigieux collège Kunugigaoka. Koro-sensei est une étrange créature qui déclare avoir subitement détruit 70 % de la Lune. et éliminer une cible bien particulière : lui-même, leur propre enseignant.</p>
+        </div>
+      </div>
+    </div>
+    <!-- droitegot -->
+    <div id="droitegot" class="casedroite">
+
+      <div class="trailer">
+
+        <div class="shape1">
+          <iframe src="https://www.youtube.com/embed/CnhFBlkzYe8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+
+            <button id="boutonwatch" onclick="window.open('https://www.youtube.com/embed/CnhFBlkzYe8')" class="watch" type="submit">Watch</button>
+
+        </div>
+      </div>
+
+      <div class="description">
+        <div class="shape2">
+          <h3>Description</h3>
+          <p> le roi Robert Baratheon gouverne le Royaume des Sept Couronnes depuis plus de dix-sept ans,  Jon Arryn, vient de décéder, et le roi part alors dans le nord du royaume demander à son vieil ami Eddard « Ned » Stark de remplacer leur regretté mentor au poste de Main du roi.</p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+    function startTime() {
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById('txt').innerHTML =
+        h + ":" + m + ":" + s;
+        var t = setTimeout(startTime, 500);
+    }
+    function checkTime(i) {
+        if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+        return i;
+    }
+    </script>
+    <script>
+    function BoutonDrame(){
+      document.getElementById('contenu0').style.display='none';
+      document.getElementById('contenu1').style.display='block';
+      document.getElementById('contenu2').style.display='none';
+      document.getElementById('contenu3').style.display='none';
+      document.getElementById('contenu4').style.display='none';
+      document.getElementById('contenu5').style.display='none';
+    }
+    function BoutonComedie(){
+      document.getElementById('contenu0').style.display='none';
+      document.getElementById('contenu1').style.display='none';
+      document.getElementById('contenu2').style.display='block';
+      document.getElementById('contenu3').style.display='none';
+      document.getElementById('contenu4').style.display='none';
+      document.getElementById('contenu5').style.display='none';
+    }
+    function BoutonAction(){
+      document.getElementById('contenu0').style.display='none';
+      document.getElementById('contenu1').style.display='none';
+      document.getElementById('contenu2').style.display='none';
+      document.getElementById('contenu3').style.display='block';
+      document.getElementById('contenu4').style.display='none';
+      document.getElementById('contenu5').style.display='none';
+    }
+    function BoutonAventure(){
+      document.getElementById('contenu0').style.display='none';
+      document.getElementById('contenu1').style.display='none';
+      document.getElementById('contenu2').style.display='none';
+      document.getElementById('contenu3').style.display='none';
+      document.getElementById('contenu4').style.display='block';
+      document.getElementById('contenu5').style.display='none';
+    }
+    function BoutonPopulaire(){
+      document.getElementById('contenu0').style.display='none';
+      document.getElementById('contenu1').style.display='none';
+      document.getElementById('contenu2').style.display='none';
+      document.getElementById('contenu3').style.display='none';
+      document.getElementById('contenu4').style.display='none';
+      document.getElementById('contenu5').style.display='block';
+    }
+    function AfficheVikings(){
+        document.getElementById('droitedefault').style.display='none';
+        document.getElementById('droitevikings').style.display='block';
+        document.getElementById('droiteassassination').style.display='none';
+        document.getElementById('droitebreakingbad').style.display='none';
+        document.getElementById('droitebrooklyn99').style.display='none';
+        document.getElementById('droiteendofworld').style.display='none';
+        document.getElementById('droiteattackontitan').style.display='none';
+        document.getElementById('droitehimym').style.display='none';
+        document.getElementById('droitemyhero').style.display='none';
+        document.getElementById('droitenaruto').style.display='none';
+        document.getElementById('droiteonepiece').style.display='none';
+        document.getElementById('droitetheoffice').style.display='none';
+        document.getElementById('droitetokyoghoul').style.display='none';
+        document.getElementById('droitegot').style.display='none';
+    }
+    function AfficherAssassination(){
+        document.getElementById('droitedefault').style.display='none';
+        document.getElementById('droitevikings').style.display='none';
+        document.getElementById('droiteassassination').style.display='block';
+        document.getElementById('droitebreakingbad').style.display='none';
+        document.getElementById('droitebrooklyn99').style.display='none';
+        document.getElementById('droiteendofworld').style.display='none';
+        document.getElementById('droiteattackontitan').style.display='none';
+        document.getElementById('droitehimym').style.display='none';
+        document.getElementById('droitemyhero').style.display='none';
+        document.getElementById('droitenaruto').style.display='none';
+        document.getElementById('droiteonepiece').style.display='none';
+        document.getElementById('droitetheoffice').style.display='none';
+        document.getElementById('droitetokyoghoul').style.display='none';
+        document.getElementById('droitegot').style.display='none';
+    }
+    function AfficherAttackontitan(){
+        document.getElementById('droitedefault').style.display='none';
+        document.getElementById('droitevikings').style.display='none';
+        document.getElementById('droiteassassination').style.display='none';
+        document.getElementById('droitebreakingbad').style.display='none';
+        document.getElementById('droitebrooklyn99').style.display='none';
+        document.getElementById('droiteendofworld').style.display='none';
+        document.getElementById('droiteattackontitan').style.display='block';
+        document.getElementById('droitehimym').style.display='none';
+        document.getElementById('droitemyhero').style.display='none';
+        document.getElementById('droitenaruto').style.display='none';
+        document.getElementById('droiteonepiece').style.display='none';
+        document.getElementById('droitetheoffice').style.display='none';
+        document.getElementById('droitetokyoghoul').style.display='none';
+        document.getElementById('droitegot').style.display='none';
+    }
+    function AfficherBreakingbad(){
+        document.getElementById('droitedefault').style.display='none';
+        document.getElementById('droitevikings').style.display='none';
+        document.getElementById('droiteassassination').style.display='none';
+        document.getElementById('droitebreakingbad').style.display='block';
+        document.getElementById('droitebrooklyn99').style.display='none';
+        document.getElementById('droiteendofworld').style.display='none';
+        document.getElementById('droiteattackontitan').style.display='none';
+        document.getElementById('droitehimym').style.display='none';
+        document.getElementById('droitemyhero').style.display='none';
+        document.getElementById('droitenaruto').style.display='none';
+        document.getElementById('droiteonepiece').style.display='none';
+        document.getElementById('droitetheoffice').style.display='none';
+        document.getElementById('droitetokyoghoul').style.display='none';
+        document.getElementById('droitegot').style.display='none';
+    }
+    function AfficherBrooklyn99(){
+        document.getElementById('droitedefault').style.display='none';
+        document.getElementById('droitevikings').style.display='none';
+        document.getElementById('droiteassassination').style.display='none';
+        document.getElementById('droitebreakingbad').style.display='none';
+        document.getElementById('droitebrooklyn99').style.display='block';
+        document.getElementById('droiteendofworld').style.display='none';
+        document.getElementById('droiteattackontitan').style.display='none';
+        document.getElementById('droitehimym').style.display='none';
+        document.getElementById('droitemyhero').style.display='none';
+        document.getElementById('droitenaruto').style.display='none';
+        document.getElementById('droiteonepiece').style.display='none';
+        document.getElementById('droitetheoffice').style.display='none';
+        document.getElementById('droitetokyoghoul').style.display='none';
+        document.getElementById('droitegot').style.display='none';
+    }
+    function AfficherEndofworld(){
+        document.getElementById('droitedefault').style.display='none';
+        document.getElementById('droitevikings').style.display='none';
+        document.getElementById('droiteassassination').style.display='none';
+        document.getElementById('droitebreakingbad').style.display='none';
+        document.getElementById('droitebrooklyn99').style.display='none';
+        document.getElementById('droiteendofworld').style.display='block';
+        document.getElementById('droiteattackontitan').style.display='none';
+        document.getElementById('droitehimym').style.display='none';
+        document.getElementById('droitemyhero').style.display='none';
+        document.getElementById('droitenaruto').style.display='none';
+        document.getElementById('droiteonepiece').style.display='none';
+        document.getElementById('droitetheoffice').style.display='none';
+        document.getElementById('droitetokyoghoul').style.display='none';
+        document.getElementById('droitegot').style.display='none';
+    }
+    function AfficherHimym(){
+        document.getElementById('droitedefault').style.display='none';
+        document.getElementById('droitevikings').style.display='none';
+        document.getElementById('droiteassassination').style.display='none';
+        document.getElementById('droitebreakingbad').style.display='none';
+        document.getElementById('droitebrooklyn99').style.display='none';
+        document.getElementById('droiteendofworld').style.display='none';
+        document.getElementById('droiteattackontitan').style.display='none';
+        document.getElementById('droitehimym').style.display='block';
+        document.getElementById('droitemyhero').style.display='none';
+        document.getElementById('droitenaruto').style.display='none';
+        document.getElementById('droiteonepiece').style.display='none';
+        document.getElementById('droitetheoffice').style.display='none';
+        document.getElementById('droitetokyoghoul').style.display='none';
+        document.getElementById('droitegot').style.display='none';
+    }
+    function AfficherMyhero(){
+        document.getElementById('droitedefault').style.display='none';
+        document.getElementById('droitevikings').style.display='none';
+        document.getElementById('droiteassassination').style.display='none';
+        document.getElementById('droitebreakingbad').style.display='none';
+        document.getElementById('droitebrooklyn99').style.display='none';
+        document.getElementById('droiteendofworld').style.display='none';
+        document.getElementById('droiteattackontitan').style.display='none';
+        document.getElementById('droitehimym').style.display='none';
+        document.getElementById('droitemyhero').style.display='block';
+        document.getElementById('droitenaruto').style.display='none';
+        document.getElementById('droiteonepiece').style.display='none';
+        document.getElementById('droitetheoffice').style.display='none';
+        document.getElementById('droitetokyoghoul').style.display='none';
+        document.getElementById('droitegot').style.display='none';
+    }
+    function AfficherNaruto(){
+        document.getElementById('droitedefault').style.display='none';
+        document.getElementById('droitevikings').style.display='none';
+        document.getElementById('droiteassassination').style.display='none';
+        document.getElementById('droitebreakingbad').style.display='none';
+        document.getElementById('droitebrooklyn99').style.display='none';
+        document.getElementById('droiteendofworld').style.display='none';
+        document.getElementById('droiteattackontitan').style.display='none';
+        document.getElementById('droitehimym').style.display='none';
+        document.getElementById('droitemyhero').style.display='none';
+        document.getElementById('droitenaruto').style.display='block';
+        document.getElementById('droiteonepiece').style.display='none';
+        document.getElementById('droitetheoffice').style.display='none';
+        document.getElementById('droitetokyoghoul').style.display='none';
+        document.getElementById('droitegot').style.display='none';
+    }
+    function AfficherOnepiece(){
+        document.getElementById('droitedefault').style.display='none';
+        document.getElementById('droitevikings').style.display='none';
+        document.getElementById('droiteassassination').style.display='none';
+        document.getElementById('droitebreakingbad').style.display='none';
+        document.getElementById('droitebrooklyn99').style.display='none';
+        document.getElementById('droiteendofworld').style.display='none';
+        document.getElementById('droiteattackontitan').style.display='none';
+        document.getElementById('droitehimym').style.display='none';
+        document.getElementById('droitemyhero').style.display='none';
+        document.getElementById('droitenaruto').style.display='none';
+        document.getElementById('droiteonepiece').style.display='block';
+        document.getElementById('droitetheoffice').style.display='none';
+        document.getElementById('droitetokyoghoul').style.display='none';
+        document.getElementById('droitegot').style.display='none';
+    }
+    function AfficherTheoffice(){
+        document.getElementById('droitedefault').style.display='none';
+        document.getElementById('droitevikings').style.display='none';
+        document.getElementById('droiteassassination').style.display='none';
+        document.getElementById('droitebreakingbad').style.display='none';
+        document.getElementById('droitebrooklyn99').style.display='none';
+        document.getElementById('droiteendofworld').style.display='none';
+        document.getElementById('droiteattackontitan').style.display='none';
+        document.getElementById('droitehimym').style.display='none';
+        document.getElementById('droitemyhero').style.display='none';
+        document.getElementById('droitenaruto').style.display='none';
+        document.getElementById('droiteonepiece').style.display='none';
+        document.getElementById('droitetheoffice').style.display='block';
+        document.getElementById('droitetokyoghoul').style.display='none';
+        document.getElementById('droitegot').style.display='none';
+    }
+    function AfficherTokyoghoul(){
+        document.getElementById('droitedefault').style.display='none';
+        document.getElementById('droitevikings').style.display='none';
+        document.getElementById('droiteassassination').style.display='none';
+        document.getElementById('droitebreakingbad').style.display='none';
+        document.getElementById('droitebrooklyn99').style.display='none';
+        document.getElementById('droiteendofworld').style.display='none';
+        document.getElementById('droiteattackontitan').style.display='none';
+        document.getElementById('droitehimym').style.display='none';
+        document.getElementById('droitemyhero').style.display='none';
+        document.getElementById('droitenaruto').style.display='none';
+        document.getElementById('droiteonepiece').style.display='none';
+        document.getElementById('droitetheoffice').style.display='none';
+        document.getElementById('droitetokyoghoul').style.display='block';
+        document.getElementById('droitegot').style.display='none';
+    }
+    function AfficherGot(){
+        document.getElementById('droitedefault').style.display='none';
+        document.getElementById('droitevikings').style.display='none';
+        document.getElementById('droiteassassination').style.display='none';
+        document.getElementById('droitebreakingbad').style.display='none';
+        document.getElementById('droitebrooklyn99').style.display='none';
+        document.getElementById('droiteendofworld').style.display='none';
+        document.getElementById('droiteattackontitan').style.display='none';
+        document.getElementById('droitehimym').style.display='none';
+        document.getElementById('droitemyhero').style.display='none';
+        document.getElementById('droitenaruto').style.display='none';
+        document.getElementById('droiteonepiece').style.display='none';
+        document.getElementById('droitetheoffice').style.display='none';
+        document.getElementById('droitetokyoghoul').style.display='none';
+        document.getElementById('droitegot').style.display='block';
+    }
+    function test(){
+        document.getElementById('droitedefault').style.display='none';
+        document.getElementById('droitevikings').style.display='none';
+        document.getElementById('droiteassassination').style.display='none';
+        document.getElementById('droitebreakingbad').style.display='none';
+        document.getElementById('droitebrooklyn99').style.display='none';
+        document.getElementById('droiteendofworld').style.display='none';
+        document.getElementById('droiteattackontitan').style.display='none';
+        document.getElementById('droitehimym').style.display='none';
+        document.getElementById('droitemyhero').style.display='none';
+        document.getElementById('droitenaruto').style.display='none';
+        document.getElementById('droiteonepiece').style.display='none';
+        document.getElementById('droitetheoffice').style.display='none';
+        document.getElementById('droitetokyoghoul').style.display='none';
+        document.getElementById('droitegot').style.display='none';
+    }
+
+
+    </script>
+  </body>
+</html>

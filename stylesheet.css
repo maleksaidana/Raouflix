@@ -1,0 +1,181 @@
+body{
+  color:#F5F5F5;
+  font-family: Helvetica;
+}
+#video1 {
+position: fixed;
+right: 0;
+bottom: 0;
+min-width: 100%;
+min-height: 100%;
+}
+
+.header{
+top: 0;
+left:0;
+position: fixed;
+height:10vh;
+width:100%;
+background: rgba(0, 0, 0, 0.5);
+}
+h1#bienvenue{
+margin-right: 30px;
+text-align: center;
+margin-top: 25px;
+line-height: 1.5;
+}
+
+div.shape#bienvenue{
+top:30%;
+left:5%;
+width:45%;
+height:28%;
+background: rgba(0, 0, 0, 0.5);
+border-radius: 10px;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+-khtml-border-radius: 10px;
+position: fixed;
+}
+p#dbirth{
+margin-top: 25px;
+left: 50px;
+position: relative;
+text-align: left;
+}
+.shape{
+top:15%;
+left:65%;
+width:30%;
+height:75%;
+background: rgba(0, 0, 0, 0.5);
+border-radius: 10px;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+-khtml-border-radius: 10px;
+position: fixed;
+
+}
+h3{
+color:white;
+padding-left: 60%
+}
+h1{
+margin-top: 12px;
+left: 10vh;
+position: absolute;
+color: white;
+
+}
+.contenu{
+text-align: center;
+}
+.form{
+top: 20px;
+position: fixed;
+right: 20vh;
+width: 35%;
+}
+.input {
+width: 30%;
+height: 25px;
+position: relative;
+left: 100px;
+}
+.input_b {
+width: 20%;
+height: 25px;
+position: relative;
+left: 100px;
+}
+#q,#e,#t,#u{
+margin-right:3%
+}
+#q, #w,#e,#r,#t,#y,#u{
+
+border: none;
+width: 35%;
+height: 4vh;
+margin-top: 4%;
+}
+.boutt{
+margin-top: 5vh;
+}
+.sexe {
+width: 50%;
+display: inline-flex;
+position: relative;
+right: 60px;
+height: 10px;
+margin-top: 25px;
+
+}
+.a {
+width: 15%;
+margin: 0px;
+padding: 0px;
+}
+.b {
+width: 15%;
+margin: 0px;
+padding: 0px;
+}
+.c {
+width: 15%;
+margin: 0px;
+padding: 0px;
+}
+#b{
+width: 25%
+}
+p{
+margin-top: 10%
+}
+img{
+position: fixed;
+height: 50px;
+left: 6px;
+top: 3px;
+
+}
+#z,#x{
+height: 20;
+margin-right: 5px;
+}
+input{
+background-color:#F5F5F5;
+font-family: Helvetica;
+border: none;
+}
+#q,#w{
+position: relative;
+right: 5px;
+width:33%
+}
+#e {
+width: 70%;
+}
+#r {
+width: 70%;
+position: relative;
+right: 5px;
+}
+#t,#y,#u{
+width: 21%;
+margin-top: 5px
+}
+#y{
+position: relative;
+right: 6px
+}
+h6{
+position: fixed;
+left: 78%;
+top: 90%;
+}
+a:visited {
+    color: white;
+}
+a:link {
+    color: white;
+}
